@@ -6,7 +6,7 @@
 <h1 align="center"> API Sistema de Restaurante </h1>
 <h3> Sobre:</h3>
 <p align="center">
-API Sistema de Restaurante, será criado pedidos para um restaurante, sendo um numero de mesa aonde cliente realizará pedidos dos pratos cadastrados no sistema, que será realziado abertura da mesa para pedidos, enquanto a mensa estiver aberto, estará ocupada para cadastramento de pedido dos pratos até o fechamento da conta, aonde será calculado todos os pedidos até o fechamento da mesa, no sistema vai informar se a mesa esta ocupada ou disponivel, sendo dispobilizado para outro cliente para consumo, nessa API vai realizar todo esse controle de um restaurante 
+API Sistema de Restaurante, será vinculado um número da mesa, aonde cliente realizará pedidos dos pratos cadastrados no sistema, sendo realizado abertura da mesa para pedidos, enquanto a mesa estiver aberto, estará ocupada para cadastramento de pedido dos pratos até o fechamento da conta, aonde será calculado total dos pedidos da mesa, no sistema vai informar se a mesa esta ocupada ou disponivel, dispobilizado para próximo cliente para consumo, nessa API vai realizar todo esse controle de um restaurante 
 </p>
 
 
