@@ -15,7 +15,7 @@ API Sistema de Restaurante, será vinculado um número da mesa, aonde cliente re
 - TypeScript
 - NodeJS
 - SQLite
-- Framework Zod
+- Framework Zod - Schema Validation
 - Framework Express
 - Framework knex - Query Builder
 - Isomnia - Controle API
