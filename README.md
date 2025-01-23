@@ -4,6 +4,11 @@
 </p>
 
 <h1 align="center"> API Sistema de Restaurante </h1>
+
+<p align="center">
+  <img alt="API" src="./github/API.png" width="15%">
+</p>
+
 <h3> Sobre:</h3>
 <p align="center">
 API Sistema de Restaurante, será vinculado um número da mesa, aonde cliente realizará pedidos dos produtos cadastrados no sistema, sendo realizado abertura da mesa para pedidos, enquanto a mesa estiver aberto, estará ocupada para cadastramento de pedido dos produtos até o fechamento da conta, aonde será calculado total dos pedidos da mesa, no sistema vai informar se a mesa esta ocupada ou disponivel, dispobilizado para próximo cliente para consumo, nessa API vai realizar todo esse controle de um restaurante 
