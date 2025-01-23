@@ -6,7 +6,7 @@
 <h1 align="center"> API Sistema de Restaurante </h1>
 <h3> Sobre:</h3>
 <p align="center">
-API Sistema de Restaurante, será vinculado um número da mesa, aonde cliente realizará pedidos dos pratos cadastrados no sistema, sendo realizado abertura da mesa para pedidos, enquanto a mesa estiver aberto, estará ocupada para cadastramento de pedido dos pratos até o fechamento da conta, aonde será calculado total dos pedidos da mesa, no sistema vai informar se a mesa esta ocupada ou disponivel, dispobilizado para próximo cliente para consumo, nessa API vai realizar todo esse controle de um restaurante 
+API Sistema de Restaurante, será vinculado um número da mesa, aonde cliente realizará pedidos dos produtos cadastrados no sistema, sendo realizado abertura da mesa para pedidos, enquanto a mesa estiver aberto, estará ocupada para cadastramento de pedido dos produtos até o fechamento da conta, aonde será calculado total dos pedidos da mesa, no sistema vai informar se a mesa esta ocupada ou disponivel, dispobilizado para próximo cliente para consumo, nessa API vai realizar todo esse controle de um restaurante 
 </p>
 
 
@@ -17,77 +17,33 @@ API Sistema de Restaurante, será vinculado um número da mesa, aonde cliente re
 - SQLite
 - Framework Zod
 - Framework Express
-- Framework knex
+- Framework knex - Query Builder
+- Isomnia - Controle API
+
+<br>
+
+## Fluxo do projeto API Restaurante ##
+
+<p align="center">
+  <img alt="Sistema de Reembolso" src="github/Fluxo.png" width="100%">
+</p>
 
 
-## Criar Ticket ##
-<i>Cria um novo ticket de suporte.<i><br><br>
+## Tabela Banco de dados do Fluxo do Restaurante ##
 
-**Método:** POST
+- Tabela Produtos - Cadastros dos pratos e bebidas
+- Tabela Tables - Controle da Mesa, numero da mesa
+- Tabela Session Tables - Controle do numero da mesa se esta ocupado ou disponivel para uso
+- Tabela Orders - Controle da mesa em uso, consumo e da conta do cliente
 
-**URL:** `/tickets`
+<br>
 
-**Dados:**
+<p align="center">
+  <img alt="Sistema de Reembolso" src="github/Tabela.png" width="100%">
+</p>
 
-- `equipment` (string, obrigatório): Nome do equipamento (exemplo: computador)
-- `description` (string, obrigatório): Descrição do problema.
-- `user_name` (string, obrigatório): nome do usuário que está criando o ticket.<br><br>
+## Insomnia ##
 
-
-## Obter Tickets<br>
-**Método:** GET
-
-**URL:** `/tickets`
-
-**Descrição:** Obtém uma lista de todos os tickets de suporte.
-
-**Parâmetros de Consulta (Query Parameters)**:
-
-- `status` (string, opcional): Filtra os tickets pelo status ("open" ou "closed").<br><br>
-
-## Atualizar Ticket<br>
-**Método:** PUT
-
-**URL:** `/tickets/:id`
-
-**Descrição:** Atualiza as informações de um ticket específico.
-
-**Parâmetros de Rota:**
-
-- `id` (UUID, obrigatório): ID do ticket.
-
-**Parâmetros no Corpo (JSON):**
-
-- `equipment` (string, obrigatório): Nome do equipamento (exemplo: computador)
-- `description` (string, obrigatório): Descrição do problema.
-- `user_name` não altera.<br><br>
-
-## Fechar Ticket<br>
-**Método:** PATCH
-
-**URL:** `/tickets/:id/status`
-
-**Descrição:** Atualiza as informações de um ticket específico.
-
-**Parâmetros de Rota:**
-
-- `id` (UUID, obrigatório): ID do ticket.<br><br>
-
-## Excluir Ticket<br>
-**Método:** DELETE
-
-**URL:** `/tickets/:id`
-
-**Descrição:** Exclui um ticket específico pelo seu ID.
-
-**Parâmetros de Rota:**
-
-- `id` (UUID, obrigatório): ID do ticket.<br><br>
-
-## 💻 Projeto
-
-O projeto foi executado junto com instrutor da Rocketseat somente API nodeJS todo o sistema de controle de um restaurante ultilizando os frameworks e TypeScript que foi ensinado nas aulas, conforme as tecnologia informado a cima.
-
----
-
-Rocketseat: [Participe da nossa comunidade!](https://www.rocketseat.com.br/)
+<p align="center">
+  <img alt="Sistema de Reembolso" src="github/isomnia.png" width="100%">
+</p>
